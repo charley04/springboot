@@ -62,7 +62,7 @@ public class CategoryController {
     public String selCategory(int id,Model m) throws Exception{
         Category category = categoryDao.getOne(id);
         System.out.println(category.getId());
-        m.addAttribute("category",category);
+        m.addAttribute("c",category);
         return "selCategory";
     }
 
